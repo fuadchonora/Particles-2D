@@ -12,9 +12,13 @@ let mouse = {
 }
 
 let colors = [
-    "#ff0000",
-    "#00ff00",
-    "#0000ff",
+    "#FF1744",
+    "#F50057",
+    "##D500F9",
+    "#651FFF",
+    "#1DE9B6",
+    "#FFC400",
+    "#6D4C41",
 ]
 
 let time_stamp = 0;
