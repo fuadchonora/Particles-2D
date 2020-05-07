@@ -50,7 +50,7 @@ function distance(x1, y1, x2, y2) {
     return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
 }
 
-function randomColor() {
+function randomColor(colors) {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
@@ -190,7 +190,7 @@ function init(){
         const radious = 30;
         let x = randonIntFromRange(radious, canvas.width - radious);
         let y = randonIntFromRange(radious, canvas.height - radious);
-        const color = randomColor();
+        const color = randomColor(colors);
 
         if(i !== 0){
             for(let j = 0; j < obstacles.length; j++){
@@ -221,7 +221,6 @@ function animate() {
 function start(){
     init();
     animate();
-    console.log('blah');
 }
 
 document.onload = start();
